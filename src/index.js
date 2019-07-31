@@ -1,6 +1,6 @@
 var request = require('request')
 
-request('http://www.example.com', function (error, response, body) {
+request('https://api.noopschallenge.com/hexbot', function (error, response, body) {
   console.log('error:', error)
   console.log('statusCode:', response && response.statusCode)
   console.log('body:', body)
