@@ -1,10 +1,13 @@
-var request = require('request')
+const request = require('request')
+const namer = require('color-namer')
 
 request('https://api.noopschallenge.com/hexbot', function (error, response, body) {
-  console.log('error:', error)
-  console.log('statusCode:', response && response.statusCode)
-  console.log('body:', body)
-  var response = JSON.parse(body) 
-  var hex = response.colors[0].value
-  console.log(hex)
+  
+  const parsedBody = JSON.parse(body) 
+  const hex = parsedBody.colors[0].value
+  
+  const names = namer(hex, { pick: ['html' ] })
+  const answer = names.html[0].name
+
+  console.log("your color is: " + hex + " (" + answer + ")")
 })

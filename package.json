@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/cowlingj/color-quiz#readme",
   "dependencies": {
+    "color-namer": "^1.3.0",
     "request": "^2.88.0"
   }
 }
