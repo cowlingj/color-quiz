@@ -1,0 +1,25 @@
+{
+  "name": "color-quiz",
+  "version": "0.0.1",
+  "description": "A javascript project using Githubs hexbot api",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cowlingj/color-quiz.git"
+  },
+  "keywords": [
+    "javascript",
+    "hexbot",
+    "github"
+  ],
+  "author": "Jonathan Cowling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cowlingj/color-quiz/issues"
+  },
+  "homepage": "https://github.com/cowlingj/color-quiz#readme"
+}
